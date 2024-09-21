@@ -1,0 +1,41 @@
+#veg-div2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 1000px;
+    background: url('../images/homebackground.webp');
+    background-repeat: no-repeat;
+   background-size: cover;
+    margin-left:150px;
+}
+#veg-starters-div{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 200px;
+
+    font-family:cursive;
+    font-variant: small-caps;
+    font-size: medium;
+    font-style: italic;
+}
+#veg-biryani-div{
+    
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 450px;
+  
+    font-family:cursive;
+    font-variant: small-caps;
+    font-size: medium;
+    font-style: italic;
+}
+#veg-curry-div{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 700px;
+    font-family:cursive;
+    font-variant: small-caps;
+    font-size: medium;
+    font-style: italic;
+}

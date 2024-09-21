@@ -1,0 +1,38 @@
+#navbar-main-div{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1000px;
+    height: 80px;
+    margin-left: 150px;
+    margin-top: 10px;
+    background:url('../images/navbar-background.jpg');
+}
+#navbar-logo{
+    position: absolute;
+    margin-left: -900px;
+
+}
+#navbar-span{
+    position: absolute;
+    margin-top: 10px;
+    margin-left:-471px;
+    color: white;
+    font-family:cursive;
+    font-variant: small-caps;
+    font-size: medium;
+    font-style: italic;
+}
+#navbar-home{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 550px;
+    color: white;
+}
+#navbar-about{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 700px;
+    color: white;
+}
