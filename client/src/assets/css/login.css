@@ -1,0 +1,42 @@
+#login-form{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin-left: 400px;
+    margin-top: 70px;
+    padding: 20px;
+    background: url('../images/login-background.avif');
+    background-repeat: no-repeat;
+}
+#login-h2{
+    color: white;
+}
+#login-email{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -83px;
+}
+#login-password{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -83px;
+}
+#login-button{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: -26px;
+    background-color: rgb(35, 105, 235);
+    color: white;
+}
+#login-span{
+    position: absolute;
+    margin-top: 140px;
+    margin-left:140px;
+    border-color:rgb(35, 105, 235) ;
+    color: white;
+}
+#login-signup{
+    background-color: rgb(35, 105, 235);
+    color: white;
+    border-color:rgb(35, 105, 235) ;
+}

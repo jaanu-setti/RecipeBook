@@ -1,0 +1,49 @@
+#signup-form{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin-left: 400px;
+    margin-top: 50px;
+    padding: 20px;
+    background: url('../images/background.avif');
+    background-repeat: no-repeat;
+}
+#signup-email{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -83px;
+}
+#signup-number{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -83px;
+}
+#signup-password{
+    position: absolute;
+    margin-top: 35px;
+    margin-left: -83px;
+}
+#signup-confirmpassword{
+    position: absolute;
+    margin-top: 45px;
+    margin-left: -83px;
+}
+#signup-button{
+    position: absolute;
+    margin-top: 55px;
+    margin-left: -26px;
+    background-color: rgb(35, 105, 235);
+    color: white;
+}
+#signup-span{
+    position: absolute;
+    margin-top: 90px;
+    margin-left:125px;
+    border-color:rgb(35, 105, 235) ;
+
+}
+#signup-login{
+    background-color: rgb(35, 105, 235);
+    color: white;
+    border-color:rgb(35, 105, 235) ;
+}
