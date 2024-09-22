@@ -2,38 +2,49 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 500px;
+    height: 800px;
     width: 1000px;
     background: url('../images/homebackground.webp');
     background-repeat: no-repeat;
    background-size: cover;
     margin-left:150px;
 }
-#veg-starters-div{
+#veg-0{
     position: absolute;
-    margin-top: 50px;
-    margin-left: 200px;
+    margin-top: 80px;
+    margin-left: 300px;
 
     font-family:cursive;
     font-variant: small-caps;
     font-size: medium;
     font-style: italic;
 }
-#veg-biryani-div{
+#veg-1{
     
     position: absolute;
-    margin-top: 180px;
-    margin-left: 450px;
+    margin-top: 80px;
+    margin-left: 600px;
   
     font-family:cursive;
     font-variant: small-caps;
     font-size: medium;
     font-style: italic;
 }
-#veg-curry-div{
+#veg-2{
     position: absolute;
-    margin-top: 50px;
-    margin-left: 700px;
+    margin-top: 450px;
+    margin-left: 300px;
+    font-family:cursive;
+    font-variant: small-caps;
+    font-size: medium;
+    font-style: italic;
+}
+#veg-3{
+    
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 600px;
+  
     font-family:cursive;
     font-variant: small-caps;
     font-size: medium;

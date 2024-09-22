@@ -4,12 +4,12 @@ import mushroom from '../assets/images/mushroomchilli.jpg'
 import sambar from '../assets/images/sambar.jpeg'
 import paneer from '../assets/images/paneerbiryani.jpeg'
 import prawns from '../assets/images/prawnscurry.jpeg'
-import mutton from '../assets/images/muttonbiryani.jpeg'
+import mutton from '../assets/images/muttonbiryani.jpg'
 import fish from '../assets/images/fishcurry.jpeg'
-import chicken from '../assets/images/chickenlollipop.jpeg'
+import chicken from '../assets/images/chickenlollipop.jpg'
 
 export const vegrecipes = [
-    {
+    {  
         name : "paneer Biryani",
         image : paneer,
         ingrediants : [
@@ -34,7 +34,7 @@ export const vegrecipes = [
             "Fluff the biryani gently with a fork and garnish with fresh coriander and fried onions before serving."
         ]
     },
-    {
+    {   
         name : "mushroom chilli",
         image : mushroom,
         ingrediants : [
@@ -54,7 +54,7 @@ export const vegrecipes = [
           "Garnish with chopped spring onions and serve hot."
         ]
     },
-    {
+    {   
         name : "brinjal curry",
         image : brinjal,
         ingrediants : [
@@ -74,6 +74,7 @@ export const vegrecipes = [
             "Garnish with fresh coriander leaves and serve hot with rice or roti."
         ]
     },{
+     
         name : "sambar",
         image : sambar,
         ingrediants :[
@@ -100,7 +101,37 @@ export const nonvegrecipes = [
         name : "mutton biryani",
         image : mutton,
         ingrediants :[
-            
+             "500 grams mutton, cut into pieces", "2 cups basmati rice", "1 large onion, thinly sliced", "2 tomatoes, chopped", "4 tablespoons yogurt",  "4-5 green chilies, slit",  "1 tablespoon ginger-garlic paste",  "1/2 cup fresh mint leaves, chopped",  "1/2 cup fresh coriander leaves, chopped", "4-5 whole cloves",
+            "4-5 green cardamom pods", "1-2 cinnamon sticks", "2-3 bay leaves", "1 teaspoon cumin seeds", "Salt to taste","4 cups water",  "2-3 tablespoons ghee or oil", "Saffron strands soaked in milk (optional)",
+        ],
+        procedure :[
+            "Marinate the mutton with yogurt, ginger-garlic paste, salt, green chilies, mint, and coriander leaves. Let it sit for at least 1 hour (preferably overnight in the fridge).",
+            "In a large pot, heat ghee or oil over medium heat. Add sliced onions and sauté until golden brown.",
+            "Add marinated mutton to the pot and cook for about 10-15 minutes until the meat is browned.",
+            "Add chopped tomatoes and cook until soft. Add whole spices (cloves, cardamom, cinnamon, bay leaves, cumin seeds) and stir well.",
+            "In a separate pot, bring 4 cups of water to a boil. Add soaked basmati rice and cook until it's 70% done. Drain the rice and set aside.",
+            "Layer the partially cooked rice over the mutton in the pot. If using, drizzle saffron milk over the rice.",
+            "Cover the pot with a tight-fitting lid and cook on low heat for 25-30 minutes. This allows the flavors to meld and the rice to cook completely.",
+            "Turn off the heat and let it sit for 10 minutes before serving. Gently fluff the biryani before serving.",
+            "Serve hot with raita or salad.",
         ]
-    }
+    },{
+      name : "Prawns Biryani",
+      ingrediants : [
+          "500 grams prawns, cleaned and deveined", "2 cups basmati rice", "1 large onion, thinly sliced", "2 tomatoes, chopped", "4 tablespoons yogurt", "4-5 green chilies, slit", "1 tablespoon ginger-garlic paste", "1/2 cup fresh mint leaves, chopped", "1/2 cup fresh coriander leaves, chopped","4-5 whole cloves",
+          "4-5 green cardamom pods","1-2 cinnamon sticks", "2-3 bay leaves", "1 teaspoon cumin seeds","Salt to taste", "4 cups water", "2-3 tablespoons ghee or oil", "Saffron strands soaked in milk (optional)",
+      ],
+      procedure :[
+        "Marinate the prawns with yogurt, ginger-garlic paste, salt, and green chilies. Let it sit for about 30 minutes.",
+    "In a large pot, heat ghee or oil over medium heat. Add sliced onions and sauté until golden brown.",
+    "Add marinated prawns to the pot and cook for about 5 minutes until they are just cooked. Remove and set aside.",
+    "In the same pot, add chopped tomatoes and cook until soft. Add whole spices (cloves, cardamom, cinnamon, bay leaves, cumin seeds) and stir well.",
+    "In a separate pot, bring 4 cups of water to a boil. Add soaked basmati rice and cook until it's 70% done. Drain the rice and set aside.",
+    "Layer the partially cooked rice over the prawn mixture in the pot. If using, drizzle saffron milk over the rice.",
+    "Cover the pot with a tight-fitting lid and cook on low heat for 25-30 minutes. This allows the flavors to meld and the rice to cook completely.",
+    "Turn off the heat and let it sit for 10 minutes before serving. Gently fluff the biryani before serving.",
+    "Serve hot with raita or salad.",
+      ]
+
+    },
 ]

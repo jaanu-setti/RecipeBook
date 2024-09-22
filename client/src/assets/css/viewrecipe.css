@@ -1,0 +1,56 @@
+#viewrecipe-div3{
+    position: relative;
+    width: 1000px;
+    height : 1500px;
+    margin-left: 160px;
+    margin-top: -20px;
+    background: url(../images/recipebackground1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#viewrecipe-h1{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 400px;
+   color:rgb(212, 16, 16);
+   justify-content: center;
+    font-style: italic;
+    font-variant: small-caps;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#viewrecipe-img{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: -170px;
+}
+#viewrecipe-ingrediants{
+    position: absolute;
+    margin-top: 650px;
+    margin-left: 100px;
+    color:rgb(212, 16, 16);
+}
+#ingrediants{
+    position: absolute;
+    margin-top: 700px;
+    margin-left: 100px;
+    justify-content: left;
+    padding-left: 20px; /* To provide indentation */
+  list-style-type: disc; /* For unordered list dots */
+}
+#viewrecipe-procedure{
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 100px;
+    color:rgb(212, 16, 16);
+}
+#procedure{
+    position: absolute;
+    margin-top: 1050px;
+    margin-left: 100px;
+    padding-left: 20px; /* To provide indentation */
+  list-style-type: decimal; /* For unordered list dots */
+}
+#ingrediants li , #procedure li {
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
