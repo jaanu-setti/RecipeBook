@@ -10,8 +10,11 @@ const Signup = ()=>{
     })
     }
     const navigate = useNavigate();
+    const login = ()=>{
+        navigate('/login')
+    }
      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const login=()=>{
+    const signup=()=>{
         if(data.length===0){
             alert('all fields are mandatory')
         }
@@ -37,7 +40,7 @@ const Signup = ()=>{
                 <input  id="signup-number" type="number" name="phone" placeholder="enter your mobile number" onChange={datachange} required/><br/>
                 <input  id="signup-password" type="password" name="password" placeholder="enter a strong password" onChange={datachange} required/><br/>
                 <input  id="signup-confirmpassword" type="password" name="confirmpassword" placeholder="re-enter your password" onChange={datachange} required/><br/>
-                <button  id="signup-button" onClick={login}>Signup</button>
+                <button  id="signup-button" onClick={signup}>Signup</button>
                 <div id="signup-span">
                     <span>Already have an account ?</span>
                     <button id="signup-login" onClick={login}>Login</button>

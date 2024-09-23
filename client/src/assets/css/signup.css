@@ -1,9 +1,18 @@
-#signup-form{
+#signup-main{
     position: relative;
+    height:100vh ;
+    width : 100%;
+    margin-top: 0px;
+    background: url('../images/main-background.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#signup-form{
+    position: absolute;
     width: 500px;
     height: 400px;
     margin-left: 400px;
-    margin-top: 50px;
+    margin-top: 100px;
     padding: 20px;
     background: url('../images/background.avif');
     background-repeat: no-repeat;

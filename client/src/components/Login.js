@@ -17,7 +17,7 @@ export default function Login(){
         navigate('/home')
     }
     return(
-        <div>
+        <div id="login-main">
             <form id="login-form">
                 <h2 id="login-h2">Login Form</h2>
                 <input id="login-email" type="email" name="email" placeholder="Enter Email" onChange={loginchange}/><br/>
