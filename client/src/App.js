@@ -4,6 +4,7 @@ import Signup from './components/signup';
 import Login from './components/Login';
 import Home from './components/Home';
 import Veg from './components/veg';
+import Nonveg from './components/nonveg';
 import Viewrecipe from './components/view-recipe';
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path='/Login' element={<Login/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/veg' element={<Veg/>}/>
+          <Route path='/nonveg' element={<Nonveg/>}/>
            <Route path='/viewrecipe' element={<Viewrecipe/>}></Route>
          </Routes>
       </BrowserRouter>

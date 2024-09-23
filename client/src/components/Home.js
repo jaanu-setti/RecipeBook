@@ -9,6 +9,9 @@ export default function Home(){
     const vegsection = ()=>{
       navigate('/veg')
     }
+    const nonvegsection = ()=>{
+        navigate('/nonveg')
+    }
     return(
         <div>
             <div id="home-div1">
@@ -21,7 +24,7 @@ export default function Home(){
                 </div>
                 <div id="nonveg-div">
                     <h3>NONVEG section</h3>
-                    <img id="home-nonveg" src={nonvegthali} alt="nonveg" height={300} width={300}/>
+                    <img id="home-nonveg" src={nonvegthali} alt="nonveg" height={300} width={300} onClick={nonvegsection}/>
                 </div>
             </div>
         </div>

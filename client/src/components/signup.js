@@ -10,11 +10,26 @@ const Signup = ()=>{
     })
     }
     const navigate = useNavigate();
+     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const login=()=>{
-      navigate('/login')
+        if(data.length===0){
+            alert('all fields are mandatory')
+        }
+        else if(!emailRegex.test(data.email)){
+           alert('invalid email')
+        }
+        else if(!data.phone.length===10){
+           alert('phone number should be 10 digits')
+        }
+        else if(data.password !==data.confirmpassword){
+            alert('password and confirm password should be same')
+        }else{
+            navigate('/login')
+        }
+      
     }
     return(
-        <div>
+        <div id="signup-main">
             <form id="signup-form">
                 <h2>Signup Form</h2>
                 <input id="signup-name" type="text" name="fullname" placeholder="Enter Your FullName" onChange={datachange} required/><br/>

@@ -1,12 +1,15 @@
-import React from 'react'
+import mushroombiryani from '../assets/images/mushroombiryani.jpeg'
+import paneertikka from '../assets/images/paneer-tikka.jpg'
 import brinjal from '../assets/images/brinjalcurry.jpeg'
 import mushroom from '../assets/images/mushroomchilli.jpg'
 import sambar from '../assets/images/sambar.jpeg'
 import paneer from '../assets/images/paneerbiryani.jpeg'
-import prawns from '../assets/images/prawnscurry.jpeg'
+import prawnscurry from '../assets/images/prawnscurry.jpeg'
 import mutton from '../assets/images/muttonbiryani.jpg'
 import fish from '../assets/images/fishcurry.jpeg'
-import chicken from '../assets/images/chickenlollipop.jpg'
+import chickenlollipop from '../assets/images/chickenlollipop.jpg'
+import prawnsbiryani from '../assets/images/prawnsbiryani.jpg'
+import chickenmajestic from '../assets/images/chickenmajestic.jpg'
 
 export const vegrecipes = [
     {  
@@ -34,6 +37,41 @@ export const vegrecipes = [
             "Fluff the biryani gently with a fork and garnish with fresh coriander and fried onions before serving."
         ]
     },
+    {
+        name : 'mushroom biryani',
+        image : mushroombiryani,
+        ingrediants : [
+            "500 grams mushrooms, cleaned and sliced",
+            "2 cups basmati rice",
+            "1 large onion, thinly sliced",
+            "2 tomatoes, chopped",
+            "4 tablespoons yogurt",
+            "4-5 green chilies, slit",
+            "1 tablespoon ginger-garlic paste",
+            "1/2 cup fresh mint leaves, chopped",
+            "1/2 cup fresh coriander leaves, chopped",
+            "4-5 whole cloves",
+            "4-5 green cardamom pods",
+            "1-2 cinnamon sticks",
+            "2-3 bay leaves",
+            "1 teaspoon cumin seeds",
+            "Salt to taste",
+            "4 cups water",
+            "2-3 tablespoons ghee or oil",
+            "Saffron strands soaked in milk (optional)",
+        ],
+        procedure :[
+            "In a large pot, heat ghee or oil over medium heat. Add sliced onions and sauté until golden brown.",
+    "Add ginger-garlic paste and green chilies. Sauté for another 1-2 minutes until fragrant.",
+    "Add chopped tomatoes and cook until they soften. Stir in the sliced mushrooms and cook for about 5-7 minutes until they release moisture and are cooked through.",
+    "Add yogurt, mint leaves, and coriander leaves, and mix well. Season with salt and let it cook for another 2-3 minutes.",
+    "In a separate pot, bring 4 cups of water to a boil. Add soaked basmati rice and cook until it's 70% done. Drain the rice and set aside.",
+    "Layer the partially cooked rice over the mushroom mixture in the pot. If using, drizzle saffron milk over the rice.",
+    "Cover the pot with a tight-fitting lid and cook on low heat for 25-30 minutes. This allows the flavors to meld and the rice to cook completely.",
+    "Turn off the heat and let it sit for 10 minutes before serving. Gently fluff the biryani before serving.",
+    "Serve hot with raita or salad.",
+        ]
+    },
     {   
         name : "mushroom chilli",
         image : mushroom,
@@ -52,6 +90,24 @@ export const vegrecipes = [
           "Toss in the fried mushrooms and stir to coat them with the sauce.",
           "Cook for another 2-3 minutes, ensuring the mushrooms absorb the flavors.",
           "Garnish with chopped spring onions and serve hot."
+        ]
+    },
+    {
+        name : "paneer tikka",
+        image : paneertikka,
+        ingrediants : [
+            "500 grams paneer, cut into cubes", "1 cup thick yogurt", "2 tablespoons ginger-garlic paste", "2 tablespoons red chili powder", "1 tablespoon turmeric powder", "1 tablespoon garam masala", "1 tablespoon cumin powder","2 tablespoons lemon juice",
+            "Salt to taste","1 large onion, cut into wedges", "1 bell pepper, cut into cubes", "1-2 tablespoons oil", "Fresh coriander leaves for garnish", "Lemon wedges for serving",
+        ],
+        procedure : [
+            "In a mixing bowl, combine yogurt, ginger-garlic paste, red chili powder, turmeric powder, garam masala, cumin powder, lemon juice, and salt to create a marinade.",
+    "Add the paneer cubes, onion wedges, and bell pepper cubes to the marinade. Ensure everything is well coated. Let it marinate for at least 1-2 hours (or overnight in the fridge for best results).",
+    "Preheat the oven to 200°C (or prepare a grill).",
+    "Thread the marinated paneer, onion, and bell pepper onto skewers.",
+    "Brush the skewers with oil and place them on a baking tray or grill.",
+    "Bake or grill for about 15-20 minutes, turning occasionally until the paneer is golden and slightly charred.",
+    "Remove from the oven or grill and garnish with fresh coriander leaves.",
+    "Serve hot with lemon wedges and your favorite mint chutney.",
         ]
     },
     {   
@@ -94,6 +150,8 @@ export const vegrecipes = [
           "Garnish with fresh coriander leaves and serve hot with rice, idli, or dosa."
         ]
     }
+   
+    
 ]
 
 export const nonvegrecipes = [
@@ -117,6 +175,7 @@ export const nonvegrecipes = [
         ]
     },{
       name : "Prawns Biryani",
+      image : prawnsbiryani,
       ingrediants : [
           "500 grams prawns, cleaned and deveined", "2 cups basmati rice", "1 large onion, thinly sliced", "2 tomatoes, chopped", "4 tablespoons yogurt", "4-5 green chilies, slit", "1 tablespoon ginger-garlic paste", "1/2 cup fresh mint leaves, chopped", "1/2 cup fresh coriander leaves, chopped","4-5 whole cloves",
           "4-5 green cardamom pods","1-2 cinnamon sticks", "2-3 bay leaves", "1 teaspoon cumin seeds","Salt to taste", "4 cups water", "2-3 tablespoons ghee or oil", "Saffron strands soaked in milk (optional)",
@@ -134,4 +193,86 @@ export const nonvegrecipes = [
       ]
 
     },
+    {
+        name : "chicken lollipop",
+        image : chickenlollipop,
+        ingrediants : [
+           "500 grams chicken wings (drumettes)", "2 tablespoons ginger-garlic paste", "2 tablespoons soy sauce", "1 tablespoon red chili powder",  "1 tablespoon cornflour", "1 tablespoon all-purpose flour","1 tablespoon vinegar",
+           "1 teaspoon black pepper powder", "Salt to taste", "Oil for deep frying", "Chopped spring onions for garnish","Lemon wedges for serving",
+        ],
+        procedure : [
+             "Clean the chicken wings and separate the drumette part. Push the meat down to create a lollipop shape.",
+    "In a mixing bowl, combine ginger-garlic paste, soy sauce, red chili powder, cornflour, all-purpose flour, vinegar, black pepper powder, and salt. Mix well to form a marinade.",
+    "Add the chicken lollipops to the marinade, ensuring they are well coated. Marinate for at least 1-2 hours (or overnight in the fridge for best results).",
+    "Heat oil in a deep frying pan over medium heat. Once the oil is hot, carefully add the marinated chicken lollipops in batches.",
+    "Fry until they turn golden brown and are cooked through (about 8-10 minutes). Make sure to flip them occasionally for even cooking.",
+    "Once cooked, remove the chicken lollipops and place them on paper towels to drain excess oil.",
+    "Garnish with chopped spring onions and serve hot with lemon wedges and your favorite dipping sauce.",
+  
+        ]
+    },
+    {
+        name : 'chicken majestic',
+        image : chickenmajestic,
+        ingrediants : [
+            "500 grams boneless chicken, cut into strips", "2 tablespoons ginger-garlic paste",  "2 tablespoons red chili powder",  "1 tablespoon garam masala", "1 tablespoon cornflour", "1 tablespoon all-purpose flour", "2 tablespoons yogurt", "1 tablespoon lemon juice",
+            "Salt to taste", "Oil for frying", "1 large onion, thinly sliced", "2-3 green chilies, slit",  "Fresh coriander leaves for garnish", "Lemon wedges for serving",
+        ],
+        procedure : [
+           "In a mixing bowl, combine ginger-garlic paste, red chili powder, garam masala, cornflour, all-purpose flour, yogurt, lemon juice, and salt to create a marinade.",
+    "Add the chicken strips to the marinade, ensuring they are well coated. Marinate for at least 1-2 hours (or overnight for best results).",
+    "Heat oil in a pan over medium heat. Add sliced onions and sauté until golden brown. Remove and set aside.",
+    "In the same oil, add the marinated chicken strips in batches, frying until they are golden brown and cooked through (about 5-7 minutes).",
+    "Remove the chicken from the oil and place it on paper towels to drain excess oil.",
+    "In the same pan, add slit green chilies and sauté for a minute. Add the fried chicken and toss well to coat with the flavors.",
+    "Garnish with sautéed onions and fresh coriander leaves.",
+    "Serve hot with lemon wedges and your favorite dipping sauce."
+        ]
+    },
+    {
+       name : "prawns curry",
+       image : prawnscurry,
+       ingrediants : [
+        "500 grams prawns, cleaned and deveined",
+        "2 tablespoons oil (coconut or vegetable)",
+        "1 large onion, finely chopped",
+        "2 tomatoes, chopped",
+        "1 tablespoon ginger-garlic paste",
+        "2-3 green chilies, slit",
+        "1 teaspoon turmeric powder",
+        "1 teaspoon red chili powder",
+        "1 teaspoon coriander powder",
+        "1 teaspoon cumin powder",
+        "1 cup coconut milk",
+        "Salt to taste",
+        "Fresh coriander leaves for garnish",
+        "Lemon wedges for serving",
+       ],
+       procedure :[
+        "Heat oil in a pan over medium heat. Add chopped onions and sauté until they are golden brown.",
+        "Add ginger-garlic paste and green chilies. Sauté for another 1-2 minutes until fragrant.",
+        "Add chopped tomatoes and cook until they soften. Stir in turmeric powder, red chili powder, coriander powder, and cumin powder. Cook for 2-3 minutes.",
+        "Add the cleaned prawns to the pan, gently coating them with the spice mixture. Cook for about 3-4 minutes until the prawns turn pink.",
+        "Pour in the coconut milk and bring to a gentle simmer. Cook for another 5 minutes, allowing the flavors to meld. Adjust salt to taste.",
+        "Remove from heat and garnish with fresh coriander leaves.",
+        "Serve hot with steamed rice or bread and lemon wedges on the side.",
+       ]
+    },
+    {
+        name : "fish curry",
+        image : fish,
+        ingrediants : [
+            "500 grams fish fillets (like salmon or tilapia)", "2 tablespoons oil (coconut or vegetable)","1 large onion, finely chopped", "2 tomatoes, chopped", "1 tablespoon ginger-garlic paste", "2-3 green chilies, slit",  "1 teaspoon turmeric powder", "1 teaspoon red chili powder",
+           "1 teaspoon coriander powder", "1 teaspoon cumin powder", "1 cup coconut milk", "Salt to taste", "Fresh coriander leaves for garnish", "Lemon wedges for serving",
+        ],
+        procedure : [
+            "Heat oil in a pan over medium heat. Add chopped onions and sauté until they are golden brown.",
+            "Add ginger-garlic paste and green chilies. Sauté for another 1-2 minutes until fragrant.",
+            "Add chopped tomatoes and cook until they soften. Stir in turmeric powder, red chili powder, coriander powder, and cumin powder. Cook for 2-3 minutes.",
+            "Add the fish fillets to the pan, gently coating them with the spice mixture. Cook for about 3-4 minutes on each side until the fish is cooked through.",
+            "Pour in the coconut milk and bring to a gentle simmer. Cook for another 5 minutes, allowing the flavors to meld. Adjust salt to taste.",
+            "Remove from heat and garnish with fresh coriander leaves.",
+            "Serve hot with steamed rice or bread and lemon wedges on the side.",
+        ]
+    }
 ]

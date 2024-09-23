@@ -8,5 +8,5 @@ const cors = require('cors')
 app.use(cors());
 
 const user = require('./routes/user');
-app.use('/',user)
+app.use('/recipe',user)
 app.listen('5000' , console.log("app is listening at port 5000"))

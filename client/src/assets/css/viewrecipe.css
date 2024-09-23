@@ -1,4 +1,4 @@
-#viewrecipe-div3{
+.viewrecipe-div3{
     position: relative;
     width: 1000px;
     height : 1500px;
@@ -8,7 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-#viewrecipe-h1{
+.viewrecipe-h1{
     position: absolute;
     margin-top: 200px;
     margin-left: 400px;
@@ -18,18 +18,18 @@
     font-variant: small-caps;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-#viewrecipe-img{
+.viewrecipe-img{
     position: absolute;
     margin-top: 300px;
     margin-left: -170px;
 }
-#viewrecipe-ingrediants{
+.viewrecipe-ingrediants{
     position: absolute;
     margin-top: 650px;
     margin-left: 100px;
     color:rgb(212, 16, 16);
 }
-#ingrediants{
+.ingrediants{
     position: absolute;
     margin-top: 700px;
     margin-left: 100px;
@@ -37,20 +37,20 @@
     padding-left: 20px; /* To provide indentation */
   list-style-type: disc; /* For unordered list dots */
 }
-#viewrecipe-procedure{
+.viewrecipe-procedure{
     position: absolute;
     margin-top: 1000px;
     margin-left: 100px;
     color:rgb(212, 16, 16);
 }
-#procedure{
+.procedure{
     position: absolute;
     margin-top: 1050px;
     margin-left: 100px;
     padding-left: 20px; /* To provide indentation */
   list-style-type: decimal; /* For unordered list dots */
 }
-#ingrediants li , #procedure li {
+.ingrediants li , .procedure li {
     margin-bottom: 2px;
     margin-left: 2px;
 }

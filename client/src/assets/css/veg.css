@@ -1,15 +1,15 @@
-#veg-div2{
+.veg-div2{
     position: relative;
     display: flex;
     flex-direction: row;
-    height: 800px;
+    height: 1500px;
     width: 1000px;
     background: url('../images/homebackground.webp');
     background-repeat: no-repeat;
    background-size: cover;
     margin-left:150px;
 }
-#veg-0{
+.veg-0{
     position: absolute;
     margin-top: 80px;
     margin-left: 300px;
@@ -19,7 +19,7 @@
     font-size: medium;
     font-style: italic;
 }
-#veg-1{
+.veg-1{
     
     position: absolute;
     margin-top: 80px;
@@ -30,7 +30,7 @@
     font-size: medium;
     font-style: italic;
 }
-#veg-2{
+.veg-2{
     position: absolute;
     margin-top: 450px;
     margin-left: 300px;
@@ -39,10 +39,29 @@
     font-size: medium;
     font-style: italic;
 }
-#veg-3{
+.veg-3{
     
     position: absolute;
     margin-top: 450px;
+    margin-left: 600px;
+  
+    font-family:cursive;
+    font-variant: small-caps;
+    font-size: medium;
+    font-style: italic;
+}
+.veg-4 {
+    position: absolute;
+    margin-top: 800px;
+    margin-left: 300px;
+    font-family:cursive;
+    font-variant: small-caps;
+    font-size: medium;
+    font-style: italic;
+}
+.veg-5{
+    position: absolute;
+    margin-top: 800px;
     margin-left: 600px;
   
     font-family:cursive;

@@ -7,7 +7,7 @@ const jwt = require('jsonwebtoken')
 route.get('/',(req,res)=>{
     res.send("hello everyone")
 })
-route.post('signup',async(req,res)=>{
+route.post('/signup',async(req,res)=>{
     try{
         const {name , email, phone, password , confirmpassword}=req.body();
         // check if user already exists or not
