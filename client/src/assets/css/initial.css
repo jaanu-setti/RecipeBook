@@ -1,7 +1,8 @@
 #initial-main-div{
     position: relative;
-    width: 100%;
+    width: 800px;
     height: 100vh;
+    margin-left: 250px;
     background: url('../images/initial2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,17 +10,17 @@
 #initial-h1{
     position: absolute;
     color: white;
-    margin-left: 450px;
+    margin-left: 250px;
 }
 #initial-div1{
     position: absolute;
-    margin-top: 230px;
-    margin-left: 200px;
+    margin-top: 140px;
+    margin-left: 70px;
     color: white;
 }
 #initial-div2{
     position: absolute;
-    margin-top: 230px;
-    margin-left: 700px;
+    margin-top: 140px;
+    margin-left: 420px;
     color: white;
 }

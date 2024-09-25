@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-#signup-form{
+#signup-main #signup-form{
     position: absolute;
     width: 500px;
     height: 400px;
@@ -17,41 +17,41 @@
     background: url('../images/background.avif');
     background-repeat: no-repeat;
 }
-#signup-email{
+#signup-main  #signup-email{
     position: absolute;
     margin-top: 15px;
     margin-left: -83px;
 }
-#signup-number{
+#signup-main #signup-number{
     position: absolute;
     margin-top: 25px;
     margin-left: -83px;
 }
-#signup-password{
+#signup-main #signup-password{
     position: absolute;
     margin-top: 35px;
     margin-left: -83px;
 }
-#signup-confirmpassword{
+#signup-main #signup-confirmpassword{
     position: absolute;
     margin-top: 45px;
     margin-left: -83px;
 }
-#signup-button{
+#signup-main  #signup-button{
     position: absolute;
     margin-top: 55px;
     margin-left: -26px;
     background-color: rgb(35, 105, 235);
     color: white;
 }
-#signup-span{
+#signup-main  #signup-span{
     position: absolute;
     margin-top: 90px;
     margin-left:125px;
     border-color:rgb(35, 105, 235) ;
 
 }
-#signup-login{
+#signup-main  #signup-login{
     background-color: rgb(35, 105, 235);
     color: white;
     border-color:rgb(35, 105, 235) ;

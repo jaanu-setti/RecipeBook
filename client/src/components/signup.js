@@ -13,23 +13,53 @@ const Signup = ()=>{
     const login = ()=>{
         navigate('/login')
     }
-     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const signup=()=>{
-        if(data.length===0){
-            alert('all fields are mandatory')
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const signup = async (e) =>{
+        e.preventDefault();
+        if (!data.fullname || !data.email || !data.phone || !data.password || !data.confirmpassword) {
+            alert('All fields are mandatory');
+            return;
         }
-        else if(!emailRegex.test(data.email)){
-           alert('invalid email')
+        if (!emailRegex.test(data.email)) {
+            alert('Invalid email');
+            return;
         }
-        else if(!data.phone.length===10){
-           alert('phone number should be 10 digits')
+        if (data.phone.length !== 10) {
+            alert('Phone number should be 10 digits');
+            return;
         }
-        else if(data.password !==data.confirmpassword){
-            alert('password and confirm password should be same')
-        }else{
-            navigate('/login')
+        if (data.password !== data.confirmpassword) {
+            alert('Password and confirm password should be the same');
+            return;
         }
-      
+
+    try{
+   const response = await fetch('http://localhost:5000/recipe/signup',
+        {
+         method : 'POST',
+        headers : {
+         "Content-Type" : "application/json",
+        },
+        body : JSON.stringify({
+         name:data.name,
+         email : data.email,
+         phone : data.phone,
+         password : data.password,
+         confirmpassword : data.confirmpassword
+        }) }
+     )
+     if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+
+    const result = await response.json();
+    console.log(result); 
+    navigate('/login')
+ }
+catch(err){
+        console.log(err)
+       }
+    
     }
     return(
         <div id="signup-main">

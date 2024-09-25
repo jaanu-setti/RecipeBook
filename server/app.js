@@ -3,9 +3,15 @@ mongoose.connect('mongodb://localhost:27017/Recipebook')
 
 const express = require('express')
 const app = express();
-
-const cors = require('cors')
-app.use(cors());
+app.use(express.json())
+const cors = require('cors');
+app.use(cors(
+    {
+        origin: 'http://localhost:3000',
+        methods: ['GET', 'POST'],       
+        credentials: true                
+      }
+));
 
 const user = require('./routes/user');
 app.use('/recipe',user)

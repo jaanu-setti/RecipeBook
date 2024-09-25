@@ -15,8 +15,7 @@ const Navbar = ()=>{
             </div>
             <div id="navbar-about">
                 <span>About</span>
-            </div>
-            
+            </div>    
         </div>
     )
 }

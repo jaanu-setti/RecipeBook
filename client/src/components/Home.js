@@ -26,6 +26,10 @@ export default function Home(){
                     <h3>NONVEG section</h3>
                     <img id="home-nonveg" src={nonvegthali} alt="nonveg" height={300} width={300} onClick={nonvegsection}/>
                 </div>
+                <div>
+                    <span> want to add new recipe</span>
+                    <img/>
+                </div>
             </div>
         </div>
     )
