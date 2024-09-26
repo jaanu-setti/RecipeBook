@@ -15,4 +15,11 @@ app.use(cors(
 
 const user = require('./routes/user');
 app.use('/recipe',user)
+
+const recipe = require('./routes/recipe')
+app.use('/recipe' , recipe)
+
+const path = require('path');
+// app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use(express.static('public'))
 app.listen('5000' , console.log("app is listening at port 5000"))

@@ -12,9 +12,9 @@ export default function Viewrecipe(){
                 <div>
                  <Navbar/>
                 </div>
-                <div className="viewrecipe-div3">
+                <div className="viewrecipe-div3" key={vegrecipe._id}>
                     <h1 className="viewrecipe-h1">{vegrecipe.name}</h1>
-                    <img  className="viewrecipe-img" src={vegrecipe.image} alt={vegrecipe.image} height={300} width={400}/>
+                    <img  className="viewrecipe-img" src={`http://localhost:5000${vegrecipe.image}`} alt={vegrecipe.image} height={300} width={400}/>
                     <h3 className="viewrecipe-ingrediants">Ingrediants for {vegrecipe.name}:-</h3>
                     <div className="ingrediants">{vegrecipe.ingrediants.map((ingrediant , index)=>(
                         <span key={index} >{ingrediant}
@@ -35,9 +35,9 @@ export default function Viewrecipe(){
            return(
             <div>
                 <div><Navbar/></div>
-                <div className="viewrecipe-div3">
+                <div className="viewrecipe-div3" key={nonvegrecipe._id}>
                     <h1 className="viewrecipe-h1">{nonvegrecipe.name}</h1>
-                    <img  className="viewrecipe-img" src={nonvegrecipe.image} alt={nonvegrecipe.name} height={300} width={400}/>
+                    <img  className="viewrecipe-img" src={`http://localhost:5000${nonvegrecipe.image}`} alt={nonvegrecipe.name} height={300} width={400}/>
                     <h3  className="viewrecipe-ingrediants">ingrediants for {nonvegrecipe.name}:-</h3>
                     <div  className="ingrediants">
                         {nonvegrecipe.ingrediants.map((ingrediant , index)=>(

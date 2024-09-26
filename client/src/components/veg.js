@@ -1,11 +1,18 @@
-import React , {useState} from "react";
+import React , {useEffect, useState} from "react";
 import Navbar from "./Navbar";
 import '../assets/css/veg.css'
-import { vegrecipes } from "./recipe";
+
 import {useNavigate} from 'react-router-dom'
 export default function Veg(){
    const navigate = useNavigate();
-   const [recipes , setRecipes]=useState(vegrecipes);
+   const [recipes , setRecipes]=useState([]);
+   useEffect(()=>{
+   fetch('http://localhost:5000/recipe/showrecipes')
+   .then(res=>res.json())
+   .then(data=>{
+    setRecipes(data.data)})
+   .catch(err=>console.log(err))
+   },[])
    const recipeselection = (name)=>{
    const recipe = recipes.find((r)=>r.name===name)
    console.log(recipe)
@@ -19,12 +26,19 @@ export default function Veg(){
             <Navbar/>
           </div>
           <div className="veg-div2">
-             {recipes.map((recipe , index)=>
-              <div className={ `veg-${index}`}>
-                <h4  key={recipe.name}>{recipe.name}</h4>
-                <img src={recipe.image} alt={recipe.name} height={200} width={200} onClick={()=>recipeselection(recipe.name)}/>
-              </div>
-             )}
+             {
+              recipes.filter(recipe=>recipe.type==="veg").map((recipe , index)=>
+               {
+                const imageUrl = `http://localhost:5000${recipe.image}`
+                return(
+                  <div className={ `veg-${index}`}>
+                  <h4  key={recipe._id}>{recipe.name}</h4>
+                  <img src={imageUrl} alt={recipe.name} height={200} width={200} onClick={()=>recipeselection(recipe.name)}/>
+                </div>
+                )
+               }
+               )
+             }
           </div>
         </div>
     )
