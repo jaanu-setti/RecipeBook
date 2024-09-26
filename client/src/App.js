@@ -7,6 +7,7 @@ import Veg from './components/veg';
 import Nonveg from './components/nonveg';
 import Viewrecipe from './components/view-recipe';
 import Initial from './components/initial';
+import Addrecipe from './components/newrecipe';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
           <Route path='/nonveg' element={<Nonveg/>}/>
           <Route path='/signup' element={<Signup/>}/>
            <Route path='/viewrecipe' element={<Viewrecipe/>}></Route>
+           <Route path='/newrecipe' element={<Addrecipe/>}/>
          </Routes>
       </BrowserRouter>
       </div>

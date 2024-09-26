@@ -3,6 +3,7 @@ import '../assets/css/home.css'
 import Navbar from "./Navbar";
 import vegthali from '../assets/images/vegthali.jpg';
 import nonvegthali from '../assets/images/nonveg-thali.jpg'
+import licking from '../assets/images/lickingimage.avif'
 import { useNavigate } from "react-router-dom";
 export default function Home(){
     const navigate = useNavigate();
@@ -26,9 +27,11 @@ export default function Home(){
                     <h3>NONVEG section</h3>
                     <img id="home-nonveg" src={nonvegthali} alt="nonveg" height={300} width={300} onClick={nonvegsection}/>
                 </div>
-                <div>
-                    <span> want to add new recipe</span>
-                    <img/>
+                <div id="home-addrecipe">
+                    <h3 id="home-h3"> want to add new recipe ?</h3><br/>
+                    <img src={licking} alt="licking" width={80} height={80}/> <br/>
+                    <button id="home-addrecipe-button" onClick={()=>navigate('/newrecipe')}>ADD RECIPE</button>
+                   
                 </div>
             </div>
         </div>
