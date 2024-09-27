@@ -6,26 +6,11 @@ const path = require('path')
 route.get('/showrecipes',async(req,res)=>{
     try{
         const showrecipes = await Recipe.find();
-        console.log(showrecipes)
+        // console.log(showrecipes)
     res.status(201).json({message : "recipes fetched successfully", data :showrecipes})
     }catch(err){
         res.status(500).json({message : err.message})
     }
-})
-route.post('/recipearray' ,async(req,res)=>{
-    console.log("Incoming request body:", req.body); 
-   try{
-    const recipearray = req.body;
-    if (!Array.isArray(recipearray)) {
-        return res.status(400).json({ message: "Input should be an array of recipes" });
-      }
-    console.log('Received recipe array:', recipearray);
-    const addedrecipe = await Recipe.insertMany(recipearray);
-    res.status(200).json({message : "recipes added successfully" , data : addedrecipe})
-   }catch(err){
-     res.status(500).json({message : err.message})
-   }
-   
 })
 const storage = multer.diskStorage({
     destination : function(req , file , cb){

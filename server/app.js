@@ -1,5 +1,14 @@
 const mongoose = require('mongoose');
+const Insertdefaultrecipes = require('./utilss/seedrecipe')
 mongoose.connect('mongodb://localhost:27017/Recipebook')
+  .then(() => {
+    console.log("Connected to MongoDB");
+
+    // Call the insertDefaultRecipes function after successful DB connection
+    Insertdefaultrecipes(); 
+  })
+.catch(err => console.error("Failed to connect to MongoDB:", err));
+
 
 const express = require('express')
 const app = express();
