@@ -32,10 +32,9 @@ export default function Nonveg(){
                {
                 recipes.length >0?(
                recipes.filter(recipe=>recipe.type==="nonveg").map((recipe,index)=>{
-                const imageUrl = `http://localhost:5000${recipe.image}`; // Declare imageUrl here
-                console.log("Image URL:", imageUrl); 
+                const imageUrl = `http://localhost:5000${recipe.image}`; 
                return(
-                <div className={ `veg-${index}`} >
+                <div className="recipe-card" >
                    <h4 key={recipe._id}>{recipe.name}</h4>
                    <img src={imageUrl} alt={recipe.name} height={200} width={200} onClick={()=>recipeselection(recipe.name)}/>
                 </div>

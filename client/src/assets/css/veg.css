@@ -1,71 +1,29 @@
-.veg-div2{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 1500px;
-    width: 1000px;
-    background: url('../images/homebackground.webp');
-    background-repeat: no-repeat;
-   background-size: cover;
-    margin-left:150px;
-}
-.veg-0{
-    position: absolute;
-    margin-top: 80px;
-    margin-left: 300px;
 
-    font-family:cursive;
-    font-variant: small-caps;
-    font-size: medium;
-    font-style: italic;
+.veg-div2 {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    height: auto; 
+    width: 1000px; 
+    background: url('../images/homebackground.webp') no-repeat center center; /* Background image */
+    background-size: cover; 
+    margin-left: 150px; 
+    padding: 20px;
 }
-.veg-1{
-    
-    position: absolute;
-    margin-top: 80px;
-    margin-left: 600px;
-  
-    font-family:cursive;
-    font-variant: small-caps;
-    font-size: medium;
-    font-style: italic;
+
+.recipe-card {
+    width: 300px;
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-family: cursive; 
+    font-variant: small-caps; 
+    font-size: medium; 
+    font-style: italic; 
+    position: relative; 
 }
-.veg-2{
-    position: absolute;
-    margin-top: 450px;
-    margin-left: 300px;
-    font-family:cursive;
-    font-variant: small-caps;
-    font-size: medium;
-    font-style: italic;
-}
-.veg-3{
-    
-    position: absolute;
-    margin-top: 450px;
-    margin-left: 600px;
-  
-    font-family:cursive;
-    font-variant: small-caps;
-    font-size: medium;
-    font-style: italic;
-}
-.veg-4 {
-    position: absolute;
-    margin-top: 800px;
-    margin-left: 300px;
-    font-family:cursive;
-    font-variant: small-caps;
-    font-size: medium;
-    font-style: italic;
-}
-.veg-5{
-    position: absolute;
-    margin-top: 800px;
-    margin-left: 600px;
-  
-    font-family:cursive;
-    font-variant: small-caps;
-    font-size: medium;
-    font-style: italic;
+
+.recipe-card img {
+    width: 100%; 
+    height: 250px;
+    border-radius: 10px; 
 }

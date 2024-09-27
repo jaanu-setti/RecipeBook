@@ -8,12 +8,7 @@ import Nonveg from './components/nonveg';
 import Viewrecipe from './components/view-recipe';
 import Initial from './components/initial';
 import Addrecipe from './components/newrecipe';
-import SendRecipes from './components/recipe';
-import { useEffect } from 'react';
 function App() {
-  useEffect(()=>{
-     SendRecipes()
-  },[])
   return (
     <div className="App">
      
