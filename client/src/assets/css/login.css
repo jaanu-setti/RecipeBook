@@ -39,6 +39,10 @@
     margin-left: -26px;
     background-color: rgb(35, 105, 235);
     color: white;
+    cursor: pointer;
+}
+#login-button :hover{
+    background-color: #45a049;
 }
 #login-span{
     position: absolute;
@@ -51,4 +55,8 @@
     background-color: rgb(35, 105, 235);
     color: white;
     border-color:rgb(35, 105, 235) ;
+    cursor: pointer;
+}
+#login-signup:hover{
+    background-color: #45a049;
 }

@@ -1,4 +1,6 @@
 import React , {useState} from "react";
+import { useNavigate } from "react-router-dom";
+import '../assets/css/newrecipe.css'
 export default function Addrecipe(){
     const [data , setData]=useState({
         name : '',
@@ -13,6 +15,7 @@ export default function Addrecipe(){
     }
     )
     }
+    const navigate = useNavigate();
     const submitform =async (e)=>{
         e.preventDefault();
        
@@ -35,6 +38,7 @@ export default function Addrecipe(){
         if(response.ok){
             const responseData = await response.json();
             console.log("recipe added successfully" , responseData)
+          (data.type==="veg"?navigate('/veg') :navigate('/nonveg'))
         }
         else{
             console.log("recipe is not added")
@@ -54,7 +58,10 @@ export default function Addrecipe(){
     }
     return(
         <div>
-            <form method="POST" id="newrecipe-form" onSubmit={submitform}>
+            
+            <form method="POST" className="newrecipe-form" onSubmit={submitform}>
+                <h1>Add New Recipe Of Your Own</h1>
+                <br/>
                 <label>Recipe Name :-</label>
                <input name="name" placeholder="Enter Recipe Name" type="text" onChange={handlechange}/>
                <br/>
@@ -68,10 +75,10 @@ export default function Addrecipe(){
                <label>Upload image :-</label>
                <input type="file" name="file" onChange={imagehandler}/>
                <br/>
-               <label>Ingrediants :-</label>
+               <label id="newrecipe-ingrediants">Ingrediants :-</label>
                <textarea name="ingrediants" type="text" onChange={handlechange}></textarea>
                <br/>
-               <label>Procedure :-</label>
+               <label id="newrecipe-procedure">Procedure :-</label>
                <textarea name="procedure" type="text" onChange={handlechange}></textarea>
                <br/>
                <button type="submit">add recipe</button>

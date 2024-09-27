@@ -1,0 +1,36 @@
+.newrecipe-form{
+    position: relative;
+    width:600px;
+    height: 500px;
+    margin-left: 300px;
+    padding: 80px;
+    background: url('../images/background.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+.newrecipe-form input ,
+.newrecipe-form select,
+.newrecipe-form textarea{
+   width: 200px;
+   padding: 8px;
+   border-radius: 4px;
+   margin-bottom: 10px;
+}
+.newrecipe-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.newrecipe-form button {
+    background-color:cornflowerblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newrecipe-form button:hover {
+    background-color: #45a049;
+}

@@ -36,6 +36,7 @@
     position: absolute;
     margin-top: 45px;
     margin-left: -83px;
+    cursor: pointer;
 }
 #signup-main  #signup-button{
     position: absolute;
@@ -43,6 +44,9 @@
     margin-left: -26px;
     background-color: rgb(35, 105, 235);
     color: white;
+}
+#signup-main  #signup-button:hover{
+    background-color: #45a049;
 }
 #signup-main  #signup-span{
     position: absolute;
@@ -54,5 +58,9 @@
 #signup-main  #signup-login{
     background-color: rgb(35, 105, 235);
     color: white;
-    border-color:rgb(35, 105, 235) ;
+    cursor: pointer;
+   
+}
+#signup-main  #signup-login:hover{
+    background-color: #45a049;
 }
